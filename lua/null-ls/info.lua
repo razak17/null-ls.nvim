@@ -159,7 +159,8 @@ M.show_window = function(opts)
         lines = vim.list_extend(lines, indent_lines(info_lines))
     end
 
-    local win_bufnr, win_id = make_window(0.8, 0.7, opts.border or c.get().border)
+    local win_bufnr, win_id =
+        make_window(opts.height or 0.8, opts.width or 0.7, opts.border or c.get().border)
     api.nvim_win_set_option(win_id, "winhl", "FloatBorder:NullLsInfoBorder")
 
     api.nvim_buf_set_lines(win_bufnr, 0, -1, true, lines)
