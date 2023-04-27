@@ -163,6 +163,9 @@ return {
   google_java_format = {
     filetypes = { "java" }
   },
+  haxe_formatter = {
+    filetypes = { "haxe" }
+  },
   hclfmt = {
     filetypes = { "hcl" }
   },
@@ -370,6 +373,9 @@ return {
   surface = {
     filetypes = { "elixir", "surface" }
   },
+  ["swift-format"] = {
+    filetypes = { "swift" }
+  },
   swiftformat = {
     filetypes = { "swift" }
   },
@@ -390,6 +396,9 @@ return {
   },
   tidy = {
     filetypes = { "html", "xml" }
+  },
+  treefmt = {
+    filetypes = {}
   },
   trim_newlines = {
     filetypes = {}
