@@ -18,6 +18,10 @@ See [BUILTIN_CONFIG](BUILTIN_CONFIG.md) to learn how to set up and configure the
 
 Injects actions to fix typos found by `cspell`.
 
+**This source is not actively developed in this repository.**
+
+An up-to-date version exists as a companion plugin in [cspell.nvim](https://github.com/davidmh/cspell.nvim)
+
 #### Usage
 
 ```lua
@@ -768,6 +772,10 @@ local sources = { null_ls.builtins.diagnostics.credo }
 ### [cspell](https://github.com/streetsidesoftware/cspell)
 
 cspell is a spell checker for code.
+
+**This source is not actively developed in this repository.**
+
+An up-to-date version exists as a companion plugin in [cspell.nvim](https://github.com/davidmh/cspell.nvim)
 
 #### Usage
 
@@ -1821,6 +1829,23 @@ local sources = { null_ls.builtins.diagnostics.ruff }
 - Method: `diagnostics`
 - Command: `ruff`
 - Args: `{ "-n", "-e", "--stdin-filename", "$FILENAME", "-" }`
+
+### [saltlint](https://github.com/warpnet/salt-lint)
+
+A command-line utility that checks for best practices in SaltStack.
+
+#### Usage
+
+```lua
+local sources = { null_ls.builtins.diagnostics.saltlint }
+```
+
+#### Defaults
+
+- Filetypes: `{ "sls" }`
+- Method: `diagnostics_on_save`
+- Command: `salt-lint`
+- Args: `{ "--nocolor", "--json", "$FILENAME" }`
 
 ### [selene](https://kampfkarren.github.io/selene/)
 
@@ -3229,6 +3254,27 @@ local sources = { null_ls.builtins.formatting.gersemi }
 - Method: `formatting`
 - Command: `gersemi`
 - Args: `{ "-" }`
+
+### [gn_format](http://gn.googlesource.com/gn)
+
+Format your GN code!
+
+#### Usage
+
+```lua
+local sources = { null_ls.builtins.formatting.gn_format }
+```
+
+#### Defaults
+
+- Filetypes: `{ "gn" }`
+- Method: `formatting`
+- Command: `gn`
+- Args: `{ "format", "--stdin" }`
+
+#### Notes
+
+- Install google depot_tools to use gn
 
 ### [gofmt](https://pkg.go.dev/cmd/gofmt)
 

@@ -148,6 +148,9 @@ return {
   glsl = {
     diagnostics = { "glslc" }
   },
+  gn = {
+    formatting = { "gn_format" }
+  },
   go = {
     code_actions = { "gomodifytags", "impl", "refactoring" },
     diagnostics = { "golangci_lint", "gospel", "revive", "semgrep", "staticcheck" },
@@ -367,6 +370,9 @@ return {
     diagnostics = { "dotenv_linter", "shellcheck" },
     formatting = { "beautysh", "shellharden", "shfmt" },
     hover = { "printenv" }
+  },
+  sls = {
+    diagnostics = { "saltlint" }
   },
   sml = {
     formatting = { "smlfmt" }
