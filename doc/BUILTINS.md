@@ -1073,7 +1073,7 @@ local sources = { null_ls.builtins.diagnostics.golangci_lint }
 - Filetypes: `{ "go" }`
 - Method: `diagnostics_on_save`
 - Command: `golangci-lint`
-- Args: `{ "run", "--fix=false", "--out-format=json", "--path-prefix", "$ROOT" }`
+- Args: `{ "run", "--fix=false", "--out-format=json" }`
 
 ### [gospel](https://github.com/kortschak/gospel)
 
@@ -3993,8 +3993,8 @@ local sources = { null_ls.builtins.formatting.prismaFmt }
 
 - Filetypes: `{ "prisma" }`
 - Method: `formatting`
-- Command: `prisma-fmt`
-- Args: `{ "format", "-i", "$FILENAME" }`
+- Command: `prisma`
+- Args: `{ "format", "$FILENAME" }`
 
 ### [protolint](https://github.com/yoheimuta/protolint)
 
@@ -4084,6 +4084,23 @@ local sources = { null_ls.builtins.formatting.pyflyby }
 - Method: `formatting`
 - Command: `tidy-imports`
 - Args: `{ "-n" }`
+
+### [pyink](https://github.com/google/pyink)
+
+The Google Python code formatter
+
+#### Usage
+
+```lua
+local sources = { null_ls.builtins.formatting.pyink }
+```
+
+#### Defaults
+
+- Filetypes: `{ "python" }`
+- Method: `formatting`
+- Command: `pyink`
+- Args: `{ "--stdin-filename", "$FILENAME", "--quiet", "-" }`
 
 ### [qmlformat](https://doc-snapshots.qt.io/qt6-dev/qtquick-tools-and-utilities.html#qmlformat)
 
@@ -4453,7 +4470,7 @@ local sources = { null_ls.builtins.formatting.sqlfmt }
 - Filetypes: `{ "sql", "jinja" }`
 - Method: `formatting`
 - Command: `sqlfmt`
-- Args: `{ "$FILENAME" }`
+- Args: `{ "-" }`
 
 #### Notes
 
@@ -4763,6 +4780,23 @@ local sources = { null_ls.builtins.formatting.tidy }
 - Method: `formatting`
 - Command: `tidy`
 - Args: `{ "--tidy-mark", "no", "-quiet", "-indent", "-wrap", "-" }`
+
+### [topiary](https://github.com/tweag/topiary)
+
+A uniform formatter for simple languages
+
+#### Usage
+
+```lua
+local sources = { null_ls.builtins.formatting.topiary }
+```
+
+#### Defaults
+
+- Filetypes: `{ "ncl", "nickel" }`
+- Method: `formatting`
+- Command: `topiary`
+- Args: `{ "-i", "-f", "$FILENAME" }`
 
 ### [treefmt](https://github.com/numtide/treefmt)
 

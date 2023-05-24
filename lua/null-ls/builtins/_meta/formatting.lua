@@ -286,6 +286,9 @@ return {
   pyflyby = {
     filetypes = { "python" }
   },
+  pyink = {
+    filetypes = { "python" }
+  },
   qmlformat = {
     filetypes = { "qml" }
   },
@@ -399,6 +402,9 @@ return {
   },
   tidy = {
     filetypes = { "html", "xml" }
+  },
+  topiary = {
+    filetypes = { "ncl", "nickel" }
   },
   treefmt = {
     filetypes = {}
