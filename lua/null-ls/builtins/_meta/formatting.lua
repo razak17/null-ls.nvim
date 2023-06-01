@@ -130,6 +130,9 @@ return {
   fnlfmt = {
     filetypes = { "fennel", "fnl" }
   },
+  forge_fmt = {
+    filetypes = { "solidity" }
+  },
   format_r = {
     filetypes = { "r", "rmd" }
   },
@@ -379,7 +382,7 @@ return {
   surface = {
     filetypes = { "elixir", "surface" }
   },
-  ["swift-format"] = {
+  swift_format = {
     filetypes = { "swift" }
   },
   swiftformat = {

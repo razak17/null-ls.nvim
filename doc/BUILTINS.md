@@ -841,6 +841,23 @@ local sources = { null_ls.builtins.diagnostics.deadnix }
 - Command: `deadnix`
 - Args: `{ "--output-format=json", "$FILENAME" }`
 
+### [deno_lint](https://github.com/denoland/deno_lint)
+
+Blazing fast linter for JavaScript and TypeScript written in Rust
+
+#### Usage
+
+```lua
+local sources = { null_ls.builtins.diagnostics.deno_lint }
+```
+
+#### Defaults
+
+- Filetypes: `{ "javascript", "typescript", "typescriptreact", "javascriptreact" }`
+- Method: `diagnostics`
+- Command: `deno`
+- Args: `{ "lint", "--json", "$FILENAME" }`
+
 ### [djlint](https://github.com/Riverside-Healthcare/djLint)
 
 ✨ 📜 🪄 ✨ HTML Template Linter and Formatter.
@@ -3170,6 +3187,23 @@ local sources = { null_ls.builtins.formatting.fnlfmt }
 - Command: `fnlfmt`
 - Args: `{ "-" }`
 
+### [forge_fmt](https://book.getfoundry.sh/reference/config/formatter)
+
+Formats Solidity source files.
+
+#### Usage
+
+```lua
+local sources = { null_ls.builtins.formatting.forge_fmt }
+```
+
+#### Defaults
+
+- Filetypes: `{ "solidity" }`
+- Method: `formatting`
+- Command: `forge`
+- Args: `{ "fmt", "$FILENAME" }`
+
 ### [format_r](https://github.com/yihui/formatR)
 
 Format R code automatically.
@@ -4645,23 +4679,6 @@ local sources = { null_ls.builtins.formatting.surface }
 - Command: `mix`
 - Args: `{ "surface.format", "-" }`
 
-### [swift-format](https://github.com/apple/swift-format)
-
-Swift formatter from apple. Requires building from source with `swift build`
-
-#### Usage
-
-```lua
-local sources = { null_ls.builtins.formatting.swift-format }
-```
-
-#### Defaults
-
-- Filetypes: `{ "swift" }`
-- Method: `formatting`
-- Command: `swift-format`
-- Args: `{}`
-
 ### [swiftformat](https://github.com/nicklockwood/SwiftFormat)
 
 SwiftFormat is a code library and command-line tool for reformatting `swift` code on macOS or Linux.
@@ -4695,6 +4712,23 @@ local sources = { null_ls.builtins.formatting.swiftlint }
 - Method: `formatting`
 - Command: `swiftlint`
 - Args: `{ "lint", "--use-stdin", "--fix" }`
+
+### [swift_format](https://github.com/apple/swift-format)
+
+Swift formatter from apple. Requires building from source with `swift build`
+
+#### Usage
+
+```lua
+local sources = { null_ls.builtins.formatting.swift_format }
+```
+
+#### Defaults
+
+- Filetypes: `{ "swift" }`
+- Method: `formatting`
+- Command: `swift-format`
+- Args: `{}`
 
 ### [taplo](https://taplo.tamasfe.dev/)
 

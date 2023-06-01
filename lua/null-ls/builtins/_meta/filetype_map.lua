@@ -192,12 +192,12 @@ return {
   },
   javascript = {
     code_actions = { "eslint", "eslint_d", "refactoring", "xo" },
-    diagnostics = { "eslint", "eslint_d", "jshint", "semistandardjs", "standardjs", "xo" },
+    diagnostics = { "deno_lint", "eslint", "eslint_d", "jshint", "semistandardjs", "standardjs", "xo" },
     formatting = { "deno_fmt", "dprint", "eslint", "eslint_d", "prettier", "prettier_d_slim", "prettier_eslint", "prettier_standard", "prettierd", "rome", "rustywind", "semistandardjs", "standardjs" }
   },
   javascriptreact = {
     code_actions = { "eslint", "eslint_d", "xo" },
-    diagnostics = { "eslint", "eslint_d", "semistandardjs", "standardjs", "xo" },
+    diagnostics = { "deno_lint", "eslint", "eslint_d", "semistandardjs", "standardjs", "xo" },
     formatting = { "deno_fmt", "dprint", "eslint", "eslint_d", "prettier", "prettier_d_slim", "prettier_eslint", "prettier_standard", "prettierd", "rome", "rustywind", "semistandardjs", "standardjs" }
   },
   jinja = {
@@ -384,7 +384,8 @@ return {
     formatting = { "smlfmt" }
   },
   solidity = {
-    diagnostics = { "solhint" }
+    diagnostics = { "solhint" },
+    formatting = { "forge_fmt" }
   },
   spec = {
     diagnostics = { "rpmspec" }
@@ -404,7 +405,7 @@ return {
   },
   swift = {
     diagnostics = { "swiftlint" },
-    formatting = { "swift-format", "swiftformat", "swiftlint" }
+    formatting = { "swift_format", "swiftformat", "swiftlint" }
   },
   systemverilog = {
     diagnostics = { "verilator" },
@@ -447,12 +448,12 @@ return {
   },
   typescript = {
     code_actions = { "eslint", "eslint_d", "refactoring", "xo" },
-    diagnostics = { "eslint", "eslint_d", "semgrep", "tsc", "xo" },
+    diagnostics = { "deno_lint", "eslint", "eslint_d", "semgrep", "tsc", "xo" },
     formatting = { "deno_fmt", "dprint", "eslint", "eslint_d", "prettier", "prettier_d_slim", "prettier_eslint", "prettierd", "rome", "rustywind", "standardts" }
   },
   typescriptreact = {
     code_actions = { "eslint", "eslint_d", "xo" },
-    diagnostics = { "eslint", "eslint_d", "semgrep", "tsc", "xo" },
+    diagnostics = { "deno_lint", "eslint", "eslint_d", "semgrep", "tsc", "xo" },
     formatting = { "deno_fmt", "dprint", "eslint", "eslint_d", "prettier", "prettier_d_slim", "prettier_eslint", "prettierd", "rome", "rustywind", "standardts" }
   },
   verilog = {
