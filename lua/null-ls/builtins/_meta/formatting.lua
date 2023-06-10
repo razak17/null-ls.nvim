@@ -295,6 +295,9 @@ return {
   qmlformat = {
     filetypes = { "qml" }
   },
+  racket_fixw = {
+    filetypes = { "racket" }
+  },
   raco_fmt = {
     filetypes = { "racket" }
   },

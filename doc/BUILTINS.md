@@ -4132,9 +4132,9 @@ local sources = { null_ls.builtins.formatting.pyink }
 #### Defaults
 
 - Filetypes: `{ "python" }`
-- Method: `formatting`
+- Methods: `formatting, range_formatting`
 - Command: `pyink`
-- Args: `{ "--stdin-filename", "$FILENAME", "--quiet", "-" }`
+- Args: dynamically resolved (see [source](https://github.com/jose-elias-alvarez/null-ls.nvim/blob/main/lua/null-ls/builtins/formatting/pyink.lua))
 
 ### [qmlformat](https://doc-snapshots.qt.io/qt6-dev/qtquick-tools-and-utilities.html#qmlformat)
 
@@ -4152,6 +4152,27 @@ local sources = { null_ls.builtins.formatting.qmlformat }
 - Method: `formatting`
 - Command: `qmlformat`
 - Args: `{ "-i", "$FILENAME" }`
+
+### [racket_fixw](https://github.com/6cdh/racket-fixw)
+
+A Racket formatter that add/remove some whitespaces but respects newline.
+
+#### Usage
+
+```lua
+local sources = { null_ls.builtins.formatting.racket_fixw }
+```
+
+#### Defaults
+
+- Filetypes: `{ "racket" }`
+- Method: `formatting`
+- Command: `raco`
+- Args: `{ "fixw" }`
+
+#### Notes
+
+- Install with `raco pkg install fixw`
 
 ### [raco_fmt](https://docs.racket-lang.org/fmt/)
 
